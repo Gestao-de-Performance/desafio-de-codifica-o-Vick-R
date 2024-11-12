@@ -29,6 +29,26 @@ console.log(resultado); //<-- Esse trecho eu tive que pesquisar, isso é como se
 
 //(3)Pegue os mesmos 10 números do exercício anterior e mostre no console apenas os números primos.
 
+function ePrimo(n){
+    for(let j =2; j<n;j++)
+        if(n%j === 0) return false;
+
+    return n >1;
+}
+
+const numerosPrimos =
+numeros.filter(ePrimo); //Não, não ta funcionando. Eu vi a resposta correta, porem não entendi como funcionou, então vou deixar a resposta errada.
+
+//(4)Crie um jogo de par ou impar.
+
+var num = prompt("digite um numero");
+var resto = num % 2; //<- operador retorna o retante da divisão
+
+if (resto == 0){
+    console.log(num + " é par");
+} else {
+    console.log(num + " é impar");
+}
 
 
 
